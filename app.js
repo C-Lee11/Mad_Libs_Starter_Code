@@ -36,3 +36,13 @@
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
+let name1 = prompt("Give me the name of a person:");
+let place1 = prompt("Give me the name of a place:");
+let stolenItem = prompt("Give me an item:");
+let adj1 = prompt("Give me an adjective:");
+let num1 = Number(prompt("Give me number:"));
+
+const isRidiculous = true;
+
+
+let myStory = `${name1} was a CIA agent who went to the ${place1} to steal a ${adj1} ${stolenItem}. He stole ${num1} ${stolenItem}s on ${}`;
