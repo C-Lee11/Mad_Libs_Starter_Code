@@ -32,17 +32,26 @@
 
 // PART 6 — DISPLAY ON THE WEBPAGE
 // TODO: Uncomment and complete the line below once your story variable exists.
-// document.getElementById("madlib-output").innerHTML = story;
+
 
 // FINAL: Add at least three meaningful comments describing your code.
 // TEST: Try TWO sets of answers and check the browser console for errors.
 let name1 = prompt("Give me the name of a person:");
-let place1 = prompt("Give me the name of a place:");
+let place1 = prompt("Give me a country:");
 let stolenItem = prompt("Give me an item:");
 let adj1 = prompt("Give me an adjective:");
-let num1 = Number(prompt("Give me number:"));
+let num1 = Number(prompt("Give me number (Do NOT say 67):"));
 
-const isRidiculous = true;
+let time = prompt("Give me a time of day:")
+let name2 = prompt("Give me another name:")
+let years1 = prompt("Give me an amount of years")
+let hidingSpot = prompt("Give me a super random hiding spot:")
+let transportation = prompt("Give me a method of transportation:")
+let money = Number(prompt("Give me an amount of money"))
 
 
-let myStory = `${name1} was a CIA agent who went to the ${place1} to steal a ${adj1} ${stolenItem}. He stole ${num1} ${stolenItem}s on ${}`;
+
+//story starts here
+let myStory = `${name1} was a CIA agent who went to ${country} to steal a ${adj1} ${stolenItem}. He stole ${num1**2} ${stolenItem}s at ${time}. ${name1}'s accomplice was ${name2}, who ${name1} had known for ${years1 * 10} years. Eventually, the cops arrive and the two hide in a ${hidingSpot}. After the cops leave, they escape on a ${transportation}, heading back to their base. They turn in the ${stolenItem} to the government in exchange for money and they split it among each other. Each person gets half, so both of them got $${money/2}. They went to the candy store together and were left with $${money%2}`;
+
+document.getElementById("madlib-output").innerHTML = story;
